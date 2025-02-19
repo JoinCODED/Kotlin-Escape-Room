@@ -8,6 +8,7 @@ fun castSpell(type: MagicType) {
     when (type) {
         MagicType.FIRE -> println("🔥 Fireball!")
         MagicType.ICE -> println("❄️ Ice Shard!")
+        MagicType.LIGHTNING -> println("⚡️Lightning bolt!")
         // 💣 Missing case for LIGHTNING! Causes compilation error
     }
 }

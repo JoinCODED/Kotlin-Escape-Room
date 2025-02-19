@@ -14,7 +14,7 @@ class FireGuardian(name: String) : Guardian(name) {
 
 fun main() {
     val boss = FireGuardian("Inferno")
-    println("Type: " + boss.guardianType)  // 💣 Error: Companion object is not an instance property
+    println("Type:" + FireGuardian.guardianType)  // 💣 Error: Companion object is not an instance property
 }
 
 
