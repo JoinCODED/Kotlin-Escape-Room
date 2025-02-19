@@ -3,8 +3,8 @@
 // 💀 Problem: The magic chest contains duplicate treasures, but it must only return unique items.
 
 fun main() {
-    val chest = listOf("Gold", "Silver", "Gold", "Diamond", "Silver")
-    var uniqueLoot = listOf<String>()
+    val chest = mutableSetOf("Gold", "Silver", "Gold", "Diamond", "Silver")
+    var uniqueLoot = mutableSetOf<String>()
 
     for (item in chest) {
         if (!uniqueLoot.contains(item)) {
@@ -12,6 +12,10 @@ fun main() {
         }
     }
     println("Loot: $uniqueLoot")
+    val sortedLoot = chest.toSortedSet()
+
+    println("Loot: $sortedLoot")
+
 }
 
 // 🥤 Escape Condition: If you remove duplicates successfully, you move to Stage 4.
